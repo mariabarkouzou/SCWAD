@@ -1,0 +1,16 @@
+.Dog_container{
+    margin-top:100px;
+    gap:20px;
+    font-size: large;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.save{
+background-color:rgb(87, 88, 87); 
+color:#8CFFFB;
+border-radius: 20px;
+padding: 5px;
+
+}

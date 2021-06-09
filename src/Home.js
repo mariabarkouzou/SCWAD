@@ -10,17 +10,17 @@ function Home() {
     <div className="home_container">
         <Link to="/Dog">
       <button className="btn" id="dog">
-        <img src={dog} alt="cat" />
+        <img src={dog} alt="dog" />
       </button>
       </Link>
-      <Link to="/WildAnimals">
+      <Link to="/WildAnimal">
       <button className="btn" id="animals">
         <img src={animals} alt="animals" />
       </button>
       </Link>
       <Link to="/Cat">
       <button className="btn" id="cat">
-        <img src={cat} alt="dog" />
+        <img src={cat} alt="cat" />
       </button>
       </Link>
     </div>
