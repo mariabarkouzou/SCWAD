@@ -10,6 +10,7 @@
 .btn {
   background-color: rgb(87, 88, 87);
   box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
 }
 
 .btn:hover {
@@ -22,8 +23,8 @@ img {
   height: auto;
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 600px) {
   .home_container {
     flex-direction: column;
   }
-  } 
+}
