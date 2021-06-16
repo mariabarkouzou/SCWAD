@@ -1,8 +1,9 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDsNgN-Kfmtv-pUl10I_P22B3SQYWPJ01A",
+  apiKey: "AIzaSyDsNgN-Kfmtv-pUl10I_P22B3SQYWPJ01A",
     authDomain: "scwad-25d9b.firebaseapp.com",
+    databaseURL: "https://scwad-25d9b-default-rtdb.europe-west1.firebasedatabase.app",
     projectId: "scwad-25d9b",
     storageBucket: "scwad-25d9b.appspot.com",
     messagingSenderId: "938920764395",
@@ -12,7 +13,7 @@ const firebaseConfig = {
   
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database()
-firebase.analytics();
+
 
 export  {
   database, firebase as default
