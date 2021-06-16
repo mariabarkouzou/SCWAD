@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import DateTimePicker from "react-datetime-picker";
 import "./Dog.css";
 import { database } from "./firebase";
-import ImageUploader from 'react-images-upload'
+import ImageUploader from "react-images-upload";
 
 function Dog() {
   const [imageAsFile, setImageAsFile] = useState("");
   const [place, setPlace] = useState("");
-  const [date , setDate] = useState("");
+  const [date, setDate] = useState("");
   const handleImageAsFile = (e) => {
     const image = e.target.files[0];
     setImageAsFile((imageFile) => image);
@@ -26,16 +26,20 @@ function Dog() {
     <form className="Dog_container" onSubmit={handleFireBaseUpload}>
       <input type="file" onChange={handleImageAsFile} />
       <label for="date">Ημερομηνία & Ώρα</label>
-      <DateTimePicker value={date} onChange={(e) => setDate(e.target.value)
-      } />
+      <DateTimePicker value={date} onChange={(e) => setDate(e.target.value)} />
       <label for="place">City</label>
-      <select name="place" id="place" value={place} onChange={(e) => setPlace(e.target.value)}>
-      <option value="agios-nikolaos">Agios Nikolaos</option>
+      <select
+        name="place"
+        id="place"
+        value={place}
+        onChange={(e) => setPlace(e.target.value)}
+      >
+        <option value="agios-nikolaos">Agios Nikolaos</option>
         <option value="agrinio">Agrinio</option>
-      <option value="alexandria">Alexandria</option>
-      <option value="alexandroupoli">Alexandroupoli</option>
-      <option value="amaliada">Amaliada</option>
-      <option value="argos">Argos</option>
+        <option value="alexandria">Alexandria</option>
+        <option value="alexandroupoli">Alexandroupoli</option>
+        <option value="amaliada">Amaliada</option>
+        <option value="argos">Argos</option>
         <option value="arta">Arta</option>
         <option value="athens">Athens</option>
         <option value="ayio">Ayio</option>
@@ -44,7 +48,7 @@ function Dog() {
         <option value="chios">Chios</option>
         <option value="drama">Drama</option>
         <option value="edessa">Edessa</option>
-        <option value="elefsina">Elefsina</option>
+        <option value="elevsina">Elevsina</option>
         <option value="ermoupoli">Ermoupoli</option>
         <option value="florina">Florina</option>
         <option value="gerakas">Gerakas</option>
@@ -77,8 +81,8 @@ function Dog() {
         <option value="megara">Megara</option>
         <option value="mesologgi">Mesologgi</option>
         <option value="mitilini">Mitilini</option>
-        <option value="nafpaktos">Nafpaktos</option>
-        <option value="nafplio">Nafplio</option>
+        <option value="navpaktos">Navpaktos</option>
+        <option value="navplio">Navplio</option>
         <option value="naoussa">Naoussa</option>
         <option value="nea-makri">Nea Makri</option>
         <option value="oreokastro">Oreokastro</option>
@@ -106,7 +110,6 @@ function Dog() {
         <option value="veroia">Veroia</option>
         <option value="volos">Volos</option>
         <option value="xanthi">Xanthi</option>
-
       </select>
       <button className="submit">Submit</button>
     </form>
