@@ -25,7 +25,7 @@ function Dog() {
   return (
     <form className="Dog_container" onSubmit={handleFireBaseUpload}>
       <input type="file" onChange={handleImageAsFile} />
-      <label for="date">Ημερομηνία & Ώρα</label>
+      <label for="date">Date & Time</label>
       <DateTimePicker value={date} onChange={(e) => setDate(e.target.value)} />
       <label for="place">City</label>
       <select
