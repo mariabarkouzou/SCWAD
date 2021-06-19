@@ -1,8 +1,7 @@
 import React from "react";
-import cat from "./images/cat.png";
-import animals from  "./images/animals.png"
-import dog from "./images/dog.png"
-import "./Home.css"
+import cat from "../images/cat.png";
+import animals from  "../images/animals.png"
+import dog from "../images/dog.png"
 import {Link} from "react-router-dom"
 
 function Home() {
