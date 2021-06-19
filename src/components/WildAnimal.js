@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import DateTimePicker from "react-datetime-picker";
-import "./Dog.css";
-import { database } from "./firebase";
-import ImageUploader from "react-images-upload";
+import firebase from "../firebase";
+import { storage } from "../firebase";
 
-function Dog() {
+function WildAnimal() {
+  const allInputs = { imgUrl: "" };
   const [imageAsFile, setImageAsFile] = useState("");
-  const [place, setPlace] = useState("");
-  const [date, setDate] = useState("");
+  const [imageAsUrl, setImageAsUrl] = useState(allInputs);
   const handleImageAsFile = (e) => {
     const image = e.target.files[0];
     setImageAsFile((imageFile) => image);
@@ -16,24 +15,19 @@ function Dog() {
   const handleFireBaseUpload = (e) => {
     e.preventDefault();
   };
-  const uploadTask = database
-    .ref(`/images/${imageAsFile.name}`)
-    .put(imageAsFile);
+  // const uploadTask = database
+  //   .ref(`/images/${imageAsFile.name}`)
+  //   .put(imageAsFile);
 
   const [value, onChange] = useState(new Date());
 
   return (
     <form className="Dog_container" onSubmit={handleFireBaseUpload}>
       <input type="file" onChange={handleImageAsFile} />
-      <label for="date">Date & Time</label>
-      <DateTimePicker value={date} onChange={(e) => setDate(e.target.value)} />
-      <label for="place">City</label>
-      <select
-        name="place"
-        id="place"
-        value={place}
-        onChange={(e) => setPlace(e.target.value)}
-      >
+      <label for="date">Ημερομηνία & Ώρα</label>
+      <DateTimePicker onChange={onChange} value={value} />
+      <label for="place">Τοποθεσία</label>
+      <select name="place" id="place">
         <option value="agios-nikolaos">Agios Nikolaos</option>
         <option value="agrinio">Agrinio</option>
         <option value="alexandria">Alexandria</option>
@@ -111,9 +105,9 @@ function Dog() {
         <option value="volos">Volos</option>
         <option value="xanthi">Xanthi</option>
       </select>
-      <button className="submit">Submit</button>
+      <button className="save">Καταχώρηση</button>
     </form>
   );
 }
 
-export default Dog;
+export default WildAnimal;

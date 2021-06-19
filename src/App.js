@@ -1,9 +1,9 @@
 import React , {useEffect} from "react";
-import Header from "./Header";
-import Home from "./Home";
-import Cat from "./Cat";
-import WildAnimal from "./WildAnimal";
-import Dog from "./Dog";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Cat from "./components/Cat";
+import WildAnimal from "./components/WildAnimal";
+import Dog from "./components/Dog";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import alanBtn from "@alan-ai/alan-sdk-web";
 
