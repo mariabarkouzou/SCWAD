@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ProgressBar from "./ProgressBar";
-import ImageGrid from "./ImageGrid";
+import ProgressBar from "./ProgressBarDog";
+import ImageGrid from "./ImageGridDog";
 import Modal from "./Modal";
 
 function Dog() {

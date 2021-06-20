@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import useStorage from "../hooks/useStorage";
+import useStorageCat from "../hooks/useStorageCat";
 import { motion } from "framer-motion";
 
-function ProgressBar({ image, setImage }) {
-  const { progress, url } = useStorage(image);
+function ProgressBarCat({ image, setImage }) {
+  const { progress, url } = useStorageCat(image);
 
   useEffect(() => {
     if (url) {
@@ -20,4 +20,4 @@ function ProgressBar({ image, setImage }) {
   );
 }
 
-export default ProgressBar;
+export default ProgressBarCat;
