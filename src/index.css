@@ -119,10 +119,6 @@ label:hover {
   cursor:pointer;
 }
 
-#plus {
-  margin-top: 15px !important;
-}
-
 .output {
   height: 60px;
   font-size: 0.8rem;
