@@ -1,4 +1,4 @@
-import React , {useEffect} from "react";
+import React, { useEffect } from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Cat from "./components/Cat";
@@ -7,16 +7,15 @@ import Dog from "./components/Dog";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import alanBtn from "@alan-ai/alan-sdk-web";
 
-const alanKey = "584dd321d19d6f27aa0a376cc296c3662e956eca572e1d8b807a3e2338fdd0dc/stage";
-
+const alanKey =
+  "584dd321d19d6f27aa0a376cc296c3662e956eca572e1d8b807a3e2338fdd0dc/stage";
 
 function App() {
-
   useEffect(() => {
     alanBtn({
       key: alanKey,
-  } )
-  } , [])
+    });
+  }, []);
 
   return (
     <div className="app">
