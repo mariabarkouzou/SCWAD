@@ -1,9 +1,8 @@
-SCWAD Application <a href="mailto:mbarkouzou@gmail.com">Demo
+#SCWAD Application [Demo]("mailto:mbarkouzou@gmail.com")
 
-  <------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+ 
   
-
-/* INSTRUCTIONS FOR ALAN */
+#Instructions For Alan
 
 -When you open this application you will see a microphone button on bottom right corner.
 
@@ -27,4 +26,5 @@ SCWAD Application <a href="mailto:mbarkouzou@gmail.com">Demo
 
 
 
-PS. Although the database connected to ALAN has the 77 biggest cities of Greece , for now ALAN can only hear to some cities due to the accent , so try some of these : Athens , Thessaloniki , Preveza , Kalamata , Patra , Volos  , Trikala , Alexandroupoli , Komotini , Katerini , Kavala , Salamina , Tripoli.
+#PS. Although the database connected to ALAN has the 77 biggest cities of Greece , for now ALAN can only hear to some cities due to the accent , so try some of these : 
+##Athens , Thessaloniki , Preveza , Kalamata , Patra , Volos  , Trikala , Alexandroupoli , Komotini , Katerini , Kavala , Salamina , Tripoli.
