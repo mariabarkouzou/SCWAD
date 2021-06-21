@@ -7,7 +7,7 @@ The link to check this application is this :
 
 -When you open this application you will see a microphone button on bottom right corner.
 
--You can connect your microphone with this application and energise Alan by saying:
+-You can connect your microphone with this application and energise Alan by saying with a clear voice:
 
 "Hello Alan!"
 
