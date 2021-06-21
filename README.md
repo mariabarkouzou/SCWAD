@@ -2,7 +2,7 @@
 
  
   
-# Instructions For Alan
+## Instructions For Alan
 
 -When you open this application you will see a microphone button on bottom right corner.
 
