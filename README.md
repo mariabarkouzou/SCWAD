@@ -1,7 +1,7 @@
 The link to check this application is this :
 
 
-~INSTRUCTIONS FOR ALAN~
+/* INSTRUCTIONS FOR ALAN */
 
 -When you open this application you will see a microphone button on bottom right corner.
 -You can connect your microphone with this application and energise Alan by saying:
