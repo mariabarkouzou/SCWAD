@@ -1,5 +1,4 @@
-## SCWAD Application 
-[Demo]("https://mb-scwad.netlify.app/")
+## SCWAD Application [Demo]("https://mb-scwad.netlify.app/")
 
  
   
