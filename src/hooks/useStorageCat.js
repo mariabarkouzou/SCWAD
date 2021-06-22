@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { storage, firestore, timestamp } from "../firebase";
 
 function useStorageCat(image) {
