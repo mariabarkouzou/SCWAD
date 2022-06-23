@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import { storage, firestore, timestamp } from "../firebase";
 
-function useStorageAnimals(image) {
+function useStorage(image, typeOfAnimal) {
   const [progress, setProgress] = useState(0);
   const [error, setError] = useState(null);
   const [url, setUrl] = useState(null);
 
   useEffect(() => {
     const storageRef = storage.ref(image.name);
-    const collectionRef = firestore.collection("animals");
+    const collectionRef = firestore.collection(typeOfAnimal);
 
     storageRef.put(image).on(
       "state_changed",
@@ -31,4 +31,4 @@ function useStorageAnimals(image) {
   return { progress, url, error };
 }
 
-export default useStorageAnimals;
+export default useStorage;

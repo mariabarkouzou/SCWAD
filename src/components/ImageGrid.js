@@ -2,8 +2,8 @@ import React from "react";
 import useFirestore from "../hooks/useFirestore";
 import { motion } from "framer-motion";
 
-function ImageGridDog({ setSelectedImg }) {
-  const { docs } = useFirestore("dog");
+function ImageGrid({ setSelectedImg , typeOfAnimal }) {
+  const { docs } = useFirestore(typeOfAnimal);
 
   return (
     <div className="img-grid">
@@ -30,4 +30,4 @@ function ImageGridDog({ setSelectedImg }) {
   );
 }
 
-export default ImageGridDog;
+export default ImageGrid;

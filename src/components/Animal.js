@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import ProgressBar from "./ProgressBarCat";
-import ImageGrid from "./ImageGridCat";
+import ProgressBar from "./ProgressBar";
+import ImageGrid from "./ImageGrid";
 import Modal from "./Modal";
 
-function Cat() {
+function Animal({typeOfAnimal}) {
   const [image, setImage] = useState(null);
   const [error, setError] = useState(null);
   const types = ["image/png", "image/jpeg"];
@@ -27,13 +27,13 @@ function Cat() {
         <input type="file" onChange={handleImageAsFile} />
         <span>+</span>
       </label>
-      <p>Upload the image of the cat</p>
+      <p>Upload the image of the {typeOfAnimal}</p>
       <div className="output">
         {error && <div className="error">{error}</div>}
         {image && <div>{image.name}</div>}
         {image && <ProgressBar image={image} setImage={setImage} />}
       </div>
-      <ImageGrid setSelectedImg={setSelectedImg} />
+      <ImageGrid setSelectedImg={setSelectedImg} typeOfAnimal={typeOfAnimal}/>
       {selectedImg && (
         <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
       )}
@@ -41,4 +41,4 @@ function Cat() {
   );
 }
 
-export default Cat;
+export default Animal;
