@@ -8,6 +8,7 @@ function useStorage(image, typeOfAnimal) {
 
   useEffect(() => {
     const storageRef = storage.ref(image.name);
+    console.log(typeOfAnimal);
     const collectionRef = firestore.collection(typeOfAnimal);
 
     storageRef.put(image).on(

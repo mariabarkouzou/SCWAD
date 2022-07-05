@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import alanBtn from "@alan-ai/alan-sdk-web";
 import Animal from "./components/Animal";
+import Instructions from "./components/Instructions";
 
 const alanKey =
   "584dd321d19d6f27aa0a376cc296c3662e956eca572e1d8b807a3e2338fdd0dc/stage";
@@ -32,6 +33,7 @@ function App() {
             <Animal typeOfAnimal="dog" />
           </Route>
           <Home />
+          <Instructions />
         </Switch>
       </Router>
     </div>

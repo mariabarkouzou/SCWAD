@@ -31,7 +31,7 @@ function Animal({typeOfAnimal}) {
       <div className="output">
         {error && <div className="error">{error}</div>}
         {image && <div>{image.name}</div>}
-        {image && <ProgressBar image={image} setImage={setImage} />}
+        {image && <ProgressBar image={image} setImage={setImage} typeOfAnimal={typeOfAnimal}/>}
       </div>
       <ImageGrid setSelectedImg={setSelectedImg} typeOfAnimal={typeOfAnimal}/>
       {selectedImg && (
