@@ -25,9 +25,8 @@ function Animal({typeOfAnimal}) {
     <form>
       <label>
         <input type="file" onChange={handleImageAsFile} />
-        <span>+</span>
+        <span>Upload the image of the {typeOfAnimal}</span>
       </label>
-      <p>Upload the image of the {typeOfAnimal}</p>
       <div className="output">
         {error && <div className="error">{error}</div>}
         {image && <div>{image.name}</div>}

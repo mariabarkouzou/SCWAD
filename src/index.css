@@ -144,15 +144,14 @@ label input {
 
 label {
   display: block;
-  width: 60px;
-  height: 45px;
-  border: 1px solid var(--primary);
-  border-radius: 50%;
+  width: 450px;
+  padding:20px 25px;
+  border-radius: 20px;
   margin: 10px auto;
   line-height: 25px;
   color: white;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   background-color: var(--primary);
 }
 
@@ -232,7 +231,7 @@ label:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgb(132, 167, 185);
+  background-color: rgba(132, 167, 185,0.8);
   color: black;
   z-index: 10;
   overflow-y:scroll;
